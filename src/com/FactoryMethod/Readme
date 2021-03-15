@@ -1,0 +1,17 @@
+Luyện tập triển khai Factory Method Pattern
+
+Mô tả bài toán:
+
+Tạo một lớp AnimalFactory trả về một đối tượng động vật dựa trên một số dữ liệu đầu vào. Để bắt đầu, Animal là một lớp trừu tượng, AnimalFactory sẽ trả lại một lớp con được khởi tạo của Animal. Animal có một phương thức trừu tượng là makeSound().4
+
+
+---------Note-----------
+Factory Method Design Pattern:
+Đây là một trong những mẫu thiết kế được sử dụng phổ biến nhất. Theo GoF, mẫu thiết kế này định nghĩa 1 inteface để tạo các objects, nhưng để các class con quyết định loại class nào được tạo ra.
+Mẫu thiết kế này ủy thác trách nhiệm khởi tạo một class từ client đến một class cụ thể bằng cách tạo một loại hàm tạo ảo.
+Để đạt được điều này, chúng ta dựa vào một factory cung cấp cho ta các đối tượng, ẩn các chi tiết của phần implementation. Các objects được tạo được truy cập bằng một inteface chung.
+
+Khi nào sử dụng mẫu thiết kế Factory Method:
+Khi việc implementation một interface hoặc một abstract class dự kiến sẽ thay đổi thường xuyên.
+Khi implementation hiện tại không thể dễ dàng thích ứng với thay đổi mới.
+Khi quá trình khởi tạo tương đối đơn giản và hàm tạo chỉ yêu cầu một số tham số.
